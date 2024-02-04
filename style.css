@@ -152,6 +152,10 @@ p, li, label, .comment-content, .comment-replies {
     font-family: 'Tahoma', sans-serif;
 }
 
+#comments h3, label, .comment-replies, #comment_button {
+    font-size: 1.3em;
+}
+
 #likes li, #likes p, #likes img, #works li, #works p, #works img,
 #future li, #future img, #future p, 
 #goals li, #goals img, #goals p {
@@ -212,7 +216,7 @@ p, li, label, .comment-content, .comment-replies {
     color: darkgreen;
     text-align: left;
     margin-bottom: 10px;
-    font-size: 1.15em;
+    font-size: 1.5em;
 }
 
 
@@ -221,12 +225,14 @@ p, li, label, .comment-content, .comment-replies {
     margin-bottom: 10px;
     color: black;
     font-weight: normal;
+    font-size: 1.3em;
 }
 
 .comment-replies {
     text-align: left;
     color: black;
     font-weight: normal;
+    font-size: 1.3em;
 }
 
 #input_comments {
@@ -271,6 +277,7 @@ p, li, label, .comment-content, .comment-replies {
     width: 70%;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 1.5em;
 }
 
 #display_latest {
