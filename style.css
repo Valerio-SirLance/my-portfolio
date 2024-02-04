@@ -93,8 +93,8 @@ li:hover, #likes p:hover, #works p:hover, #testimonials p:hover,
 
 #pics img {
     display: block;
-    width: 500px !important; 
-    height: 500px !important;
+    width: 450px !important; 
+    height: 450px !important;
     border-radius: 15px;
     margin: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
@@ -536,7 +536,7 @@ p, li, label, .comment-content, .comment-replies {
 }
 
 .item img{
-    width: 400px !important;
+    width: 500px !important;
     height: 400px !important;
     object-fit: cover; 
     border-radius: 15px;
@@ -557,6 +557,7 @@ p, li, label, .comment-content, .comment-replies {
     margin: 0 20px; 
     padding-left: 20px;
     padding-right: 20px;
+    line-height: 30px;
 }
 
 #likes li, #works li, #future li, #goals li  {
@@ -564,8 +565,88 @@ p, li, label, .comment-content, .comment-replies {
     font-weight: bold;
     color: darkgreen;
     font-size: 1.5em;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 #works a {
     color: darkgreen !important;   
+}
+
+#carousel-likes .slick-prev,
+#carousel-future .slick-prev,
+#carousel-future .slick-next,
+#carousel-goals .slick-prev,
+#carousel-goals .slick-next,
+#carousel-works .slick-prev,
+#carousel-works .slick-next,
+#carousel-pics .slick-prev,
+#carousel-pics .slick-next,
+#carousel-likes .slick-next {
+    font-size: 0;
+    line-height: 0;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #009a5e;
+    border: none;
+    border-radius: 50%;
+    color: transparent;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    z-index: 1;
+}
+
+#carousel-future .slick-prev,
+#carousel-goals .slick-prev,
+#carousel-works .slick-prev,
+#carousel-pics .slick-prev,
+#carousel-likes .slick-prev {
+    left: 5%;
+}
+
+#carousel-future .slick-next,
+#carousel-goals .slick-next,
+#carousel-works .slick-next,
+#carousel-pics .slick-next,
+#carousel-likes .slick-next {
+    right: 5%;
+}
+
+#carousel-future .slick-prev:before,
+#carousel-future .slick-next:before,
+#carousel-goals .slick-prev:before,
+#carousel-goals .slick-next:before,
+#carousel-works .slick-prev:before,
+#carousel-works .slick-next:before,
+#carousel-pics .slick-prev:before,
+#carousel-pics .slick-next:before,
+#carousel-likes .slick-prev:before,
+#carousel-likes .slick-next:before {
+    content: '\2190';
+    font-size: 20px;
+    color: #ffc567;
+}
+
+#carousel-future .slick-next:before,
+#carousel-goals .slick-next:before,
+#carousel-works .slick-next:before,
+#carousel-pics .slick-next:before,
+#carousel-likes .slick-next:before {
+    content: '\2192'; 
+}
+
+#carousel-future .slick-prev:hover,
+#carousel-future .slick-next:hover,
+#carousel-goals .slick-prev:hover,
+#carousel-goals .slick-next:hover,
+#carousel-works .slick-prev:hover,
+#carousel-works .slick-next:hover,
+#carousel-pics .slick-prev:hover,
+#carousel-pics .slick-next:hover,
+#carousel-likes .slick-prev:hover,
+#carousel-likes .slick-next:hover {
+    background-color: darkslategrey;
 }
