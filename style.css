@@ -38,7 +38,7 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 3.5em;
     background: #009a5e;
     border: #ffc567;
     border-width: 0.3cap;
@@ -46,7 +46,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2.3em;
+    font-size: 3em;
     background: #009a5e;
     border: #ffc567;
     border-width: 0.15cap;
