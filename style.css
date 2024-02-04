@@ -92,12 +92,19 @@ li:hover, #likes p:hover, #works p:hover, #testimonials p:hover,
 }
 
 #pics img {
-    display: inline-block;
-    width: 250px;
-    height: 250px;
+    display: block;
+    width: 500px !important; 
+    height: 500px !important;
     border-radius: 15px;
     margin: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#carousel-pics {
+    width: 100%;
+    display: inline-block;
+    margin: 0 auto;
+    flex-direction: column;
 }
 
 #comments {
@@ -169,10 +176,12 @@ p, li, label, .comment-content, .comment-replies {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
-#likes .interests-row, #works .works-row, #future .future-row {
+#likes .interests-row, #works .works-row,
+#future .future-row, #goals .goals-row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;  
+    align-items: center;     
 }
 
 #works .works-row {
@@ -188,12 +197,6 @@ p, li, label, .comment-content, .comment-replies {
 }
 
 #testimonials .testimonials-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-#goals .goals-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -324,7 +327,6 @@ p, li, label, .comment-content, .comment-replies {
 }
 
 #navigation_container {
-    /* Remove the transition property from here */
     left: -250px;
     position: fixed;
     top: 0;
@@ -337,7 +339,7 @@ p, li, label, .comment-content, .comment-replies {
     border-right: #ffc567;
     border-right-style: double;
     border-right-width: 10px;
-    transition: left 0.3s ease-in-out; /* Keep only background-color transition */
+    transition: left 0.3s ease-in-out; 
 }
 
 #social_media {
@@ -424,4 +426,146 @@ p, li, label, .comment-content, .comment-replies {
 
 ::-webkit-scrollbar-track {
     background-color: #ffc567; 
+}
+
+/* Custom styles for Slick carousel dots */
+.slick-dots {
+    position: absolute;
+    bottom: 20px;
+    list-style: none;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-dots li {
+    margin: 0 5px;
+}
+
+.slick-dots {
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-dots li {
+    margin: 0 5px;
+    background: none;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 10px;
+    height: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 50%;
+    background: #009a5e;
+    color: transparent;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.slick-dots li.slick-active button {
+    background: #009a5e;
+}
+
+#likes .slick-dots li,
+#works .slick-dots li,
+#future .slick-dots li,
+#goals .slick-dots li {
+    margin: 0 5px;
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: none;    
+}
+
+#likes .interests-row .interest-item,
+#works .works-row .work-item,
+#future .future-row .future-item,
+#goals .goals-row .goals-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    width: 80%;
+}
+
+#works .works-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+    align-items: center;      
+}
+
+#future .future-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+    align-items: center;     
+}
+
+#goals .goals-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+    align-items: center;    
+}
+
+.interest-item, .works-item, .future-item, .goals-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.item img{
+    width: 400px !important;
+    height: 400px !important;
+    object-fit: cover; 
+    border-radius: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#likes p, #works p, #future p, #goals p {
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    align-self: center;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 20px; 
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#likes li, #works li, #future li, #goals li  {
+    width: 50%;
+    font-weight: bold;
+    color: darkgreen;
+    font-size: 1.5em;
+}
+
+#works a {
+    color: darkgreen !important;   
 }

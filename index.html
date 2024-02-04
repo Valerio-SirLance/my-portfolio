@@ -5,6 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+	  <!-- Include jQuery library -->
+	  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+	  <!-- Include Slick carousel library -->
+	  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<link rel="icon" href="./assets/images/icon.png" />
     <title>Valerio Sir Lance Page</title>
 </head>
@@ -61,106 +68,125 @@
 
 	<div class="container" id="likes">
         <h2>My Interests and Hobbies</h2>
-        <div class="interests-row">
-            <div class="interest-item">
+        <div class="interests-row" id="carousel-likes">
+            <div class="interest-item" >
                 <li>Arts and Crafts</li>
-				<img src="assets/images/like 1.png" alt="Turtle - Digital Art"/>
-                <p>My passion extends across diverse artistic
-					expressions—traditional mediums like drawing, painting,
-					and sculpting to the dynamic realm of digital arts.
-					Engaging in these pursuits brings immense joy and
-					fulfillment, weaving a tapestry of creativity that
-					resonates deeply within me.</p>
+				<div class="item">
+					<img src="assets/images/like 1.png" 
+						alt="Turtle - Digital Art"/>
+					<p>My passion extends across diverse artistic
+						expressions—traditional mediums like drawing, painting,
+						and sculpting to the dynamic realm of digital arts.
+						Engaging in these pursuits brings immense joy and
+						fulfillment, weaving a tapestry of creativity that
+						resonates deeply within me.</p>
+				</div>
             </div>
             <div class="interest-item">
                 <li>Music Thingies</li>
-				<img src="assets/images/like 2.jpg"
+				<div class="item">
+					<img src="assets/images/like 2.jpg"
 					alt="My Musical Instruments"/>
-                <p>Music, a multifaceted passion, unfolds through diverse
-					tunes, heartfelt singing, and playing my beloved kalimba.
-					Each element weaves into a rich, fulfilling musical
-					journey resonating deeply within me, creating a symphony
-					of emotions and experiences that enrich my soul.</p>
+					<p>Music, a multifaceted passion, unfolds through diverse
+						tunes, heartfelt singing, and playing my beloved
+						kalimba. Each element weaves into a rich, fulfilling
+						musical journey resonating deeply within me, creating a
+						symphony of emotions and experiences that
+						enrich my soul.</p>
+				</div>
             </div>
             <div class="interest-item">
                 <li>Shopping and Galas</li>
-				<img src="assets/images/like 3.png" alt="Hamilton Memoria"/>
-                <p>Engaging in retail therapy at malls, searching for items
-					that pique my interest, is a personal hobby. Equally,
-					the joy of venturing into unexplored places and embarking
-					on new adventures is profoundly satisfying, weaving a
-					tapestry of experiences that continually enrich my life.</p>
-            </div>
-        </div>
-
-        <div class="interests-row">
-            <div class="interest-item">
+				<div class="item">
+					<img src="assets/images/like 3.png" alt="Hamilton Memoria"/>
+					<p>Engaging in retail therapy at malls, searching for items
+						that pique my interest, is a personal hobby. Equally,
+						the joy of venturing into unexplored places and
+						embarking on new adventures is profoundly satisfying,
+						weaving a tapestry of experiences that continually 
+						enrich my life.</p>
+				</div>
+            </div>        
+            <div class="interest-item" >
                 <li>Clothings and Attires</li>
-				<img src="assets/images/like 4.jpg" alt="Me in Kimono"/>
-                <p>Presenting myself well on any occasion is a hobby of mine,
-					aiming to stay "in" and stylish in every season.
-					Whether it's a casual gathering or a formal event, I
-					take pleasure in curating my appearance, embracing the
-					art of self-presentation as a constant and
-					enjoyable pursuit.</p>
+				<div class="item">
+					<img src="assets/images/like 4.jpg" alt="Me in Kimono"/>
+					<p>Presenting myself well on any occasion is a hobby of
+						mine, aiming to stay "in" and stylish in every season.
+						Whether it's a casual gathering or a formal event, I
+						take pleasure in curating my appearance, embracing the
+						art of self-presentation as a constant and
+						enjoyable pursuit.</p>
+				</div>
             </div>
             <div class="interest-item">
                 <li>Gaming</li>
-				<img src="assets/images/like 5.jpg" alt="Mobile Legends"/>
-                <p>Finally, gaming is an integral part of my daily life,
-					providing entertainment through the challenges and
-					quests embedded in various games. It's a source of joy
-					that adds a dynamic and interactive dimension to my
-					routine, making each day more enjoyable and engaging.</p>
+				<div class="item">
+					<img src="assets/images/like 5.jpg" alt="Mobile Legends"/>
+					<p>Finally, gaming is an integral part of my daily life,
+						providing entertainment through the challenges and
+						quests embedded in various games. It's a source of joy
+						that adds a dynamic and interactive dimension to my
+						routine, making each day more enjoyable and
+						engaging.</p>
+				</div>
             </div>
         </div>
     </div>
 
     <div class="container" id="works">
         <h2>My Works</h2>
-        <div class="works-row">
+        <div class="works-row" id="carousel-works">
 			<div class="work-item">
                 <li><a href="./work1/countries_of_the_world.html"
 					target="_blank">Countries of the World</a></li>
-				<a href="./work1/countries_of_the_world.html" target="_blank">
-					<img src="assets/images/work 1.png"
-					alt="Countries of the World"/>
-				</a>	
-                <p>Curious about fascinating facts about different countries?
-					Explore this innovative project utilizing an API to
-					enlighten users with intriguing insights about
-					any country!</p>
+				<div class="item">
+					<a href="./work1/countries_of_the_world.html"
+						target="_blank">
+						<img src="assets/images/work 1.png"
+						alt="Countries of the World"/>
+					</a>	
+					<p>Curious about fascinating facts about different
+						countries? Explore this innovative project utilizing an
+						API to enlighten users with intriguing insights about
+						any country!</p>
+				</div>
             </div>
             <div class="work-item">
                 <li><a href="./work2/Rest API.html" target="_blank">
 					Friendship List</a></li>
-				<a href="./work2/Rest API.html" target="_blank">
-					<img src="assets/images/work 2.png"
-					alt="My Friendship List"/>
-				</a>
-                <p>Join the camaraderie! Explore my friend circle in this
-					project that used Firebase Realtime Database. Discover
-					interesting tidbits about my pals, and feel welcome to add
-					yourself to the list of friends!</p>
+				<div class="item">
+					<a href="./work2/Rest API.html" target="_blank">
+						<img src="assets/images/work 2.png"
+						alt="My Friendship List"/>
+					</a>
+					<p>Join the camaraderie! Explore my friend circle in this
+						project that used Firebase Realtime Database. Discover
+						interesting tidbits about my pals, and feel welcome to
+						add yourself to the list of friends!</p>
+				</div>
             </div>
             <div class="work-item">
 				<li><a href="./work3/index.html" target="_blank">
 					Clever Clover</a></li>
-				<a href="./work3/index.html" target="_blank">
-					<img src="assets/images/work 3.png" alt="Clever Clover"/>
-				</a>
-                <p>Discover help and support at Clever Clover - your 
-					compassionate ally for those in need. Dive into this project
-					made for redemption for expert assistance in basic math.</p>
+				<div class="item">
+					<a href="./work3/index.html" target="_blank">
+						<img src="assets/images/work 3.png" 
+						alt="Clever Clover"/>
+					</a>
+					<p>Discover help and support at Clever Clover - your 
+						compassionate ally for those in need. Dive into this
+						project made for redemption for expert assistance in
+						basic math.</p>
+				</div>
             </div>
-		</div>
-
-		<div class="works-row">
             <div class="work-item">
                 <li><a
 					href="https://sites.google.com/view/sir-lance-valerio/home"
 					target="_blank">My Portfolio</a></li>
-				<a href="https://sites.google.com/view/sir-lance-valerio/home"
+				<div class="item">
+					<a 
+					href="https://sites.google.com/view/sir-lance-valerio/home"
 					target="_blank"><img src="assets/images/work 4.png" 
 					alt="My Portfolio"/>
 				</a>
@@ -168,98 +194,113 @@
 					the very first website created as an IT endeavor. Delve
 					into a site meticulously crafted with Google Site, and
 					uncover more about me.</p>
+				</div>
             </div>
             <div class="work-item">
 				<li><a href="https://midknights.itch.io/dreaming"
 					target="_blank">Dreaming</a></li>
-				<a href="https://midknights.itch.io/dreaming" target="_blank">
-					<img src="assets/images/work 5.png" alt="Dreaming"/>
-				</a>
-                <p>Enjoy the captivating game 'Midknights: Dreaming' - a 2-D
-					pixel adventure. Play as Tala, a Guardian of Dreams,
-					maintaining serenity in the enigmatic Realm of Dreams.</p>
+				<div class="item">
+					<a href="https://midknights.itch.io/dreaming" 
+						target="_blank">
+						<img src="assets/images/work 5.png" alt="Dreaming"/>
+					</a>
+					<p>Enjoy the captivating game 'Midknights: Dreaming' - a 2-D
+						pixel adventure. Play as Tala, a Guardian of Dreams,
+						maintaining serenity in the enigmatic Realm
+						of Dreams.</p>
+				</div>
             </div>
         </div>
     </div>
 
     <div class="container" id="pics">
         <h2>Gallery</h2>
-        <img
-			 src="assets/images/1.png"
-			 alt="Sir Lance's Image 1"/>
-		<img
-			 src="assets/images/2.jpg"
-			 alt="Sir Lance's Image 2"/>
-		<img
-			 src="assets/images/3.jpg"
-			 alt="Sir Lance's Image 3"/>
-		<img
-			 src="assets/images/4.png"
-			 alt="Sir Lance's Image 4"/>
-		<img
-			 src="assets/images/5.png"
-			 alt="Sir Lance's Image 5"/>
-		<img
-			 src="assets/images/6.jpg"
-			 alt="Sir Lance's Image 6"/>
+		<div id="carousel-pics">
+			<img
+				src="assets/images/1.png"
+				alt="Sir Lance's Image 1"/>
+			<img
+				src="assets/images/2.jpg"
+				alt="Sir Lance's Image 2"/>
+			<img
+				src="assets/images/3.jpg"
+				alt="Sir Lance's Image 3"/>
+			<img
+				src="assets/images/4.png"
+				alt="Sir Lance's Image 4"/>
+			<img
+				src="assets/images/5.png"
+				alt="Sir Lance's Image 5"/>
+			<img
+				src="assets/images/6.jpg"
+				alt="Sir Lance's Image 6"/>
+		</div>			
     </div>
 
 	<div class="container" id="future">
         <h2>Me in Five Years</h2>
-        <div class="future-row">
+        <div class="future-row" id="carousel-future">
             <div class="future-item">
                 <li>Independent and Free</li>
-				<img src="assets/images/future 1.jpg" alt="Starbucks"/>
-                <p>In the next five years, I envision cultivating independence
-					and freedom. As an IT graduate, I see myself harmoniously
-					blending a fulfilling career with my passion for music and
-					arts, creating a self-sufficient source of joy and
-					fulfillment.</p>
+				<div class="item">
+					<img src="assets/images/future 1.jpg" alt="Starbucks"/>
+					<p>In the next five years, I envision cultivating
+						independence and freedom. As an IT graduate, I see
+						myself harmoniously blending a fulfilling career with
+						my passion for music and arts, creating a 
+						self-sufficient source of joy and fulfillment.</p>
+				</div>
             </div>
             <div class="future-item">
                 <li>Creativity in Industry</li>
-				<img src="assets/images/future 2.jpg" alt="Midknights"/>
-                <p>
-					I envision myself thriving in a role that
-					resonates with my passion. Whether as a dynamic front-end
-					developer, innovative game developer, or versatile
-					multimedia artist, I aspire to leverage my creative flair
-					in the IT industry after five years.</p>
+				<div class="item">
+					<img src="assets/images/future 2.jpg" alt="Midknights"/>
+					<p>
+						I envision myself thriving in a role that
+						resonates with my passion. Whether as a dynamic
+						front-end developer, innovative game developer, or
+						versatile multimedia artist, I aspire to leverage my 
+						creative flair in the IT industry after five years.</p>
+				</div>
             </div>
             <div class="future-item">
                 <li>No Pain, No Gain</li>
-				<img src="assets/images/future 3.JPG" alt="CS Oathtaking"/>
-                <p>Through diverse experiences, embracing highs and
-					lows, and anticipating the future, I find the journey
-					worthwhile. Identifying my niche is crucial. As a creative 
-					leader, I see project management as a worthy pursuit
-					alongside IT roles with creativity.</p>
+				<div class="item">
+					<img src="assets/images/future 3.JPG" alt="CS Oathtaking"/>
+					<p>Through diverse experiences, embracing highs and
+						lows, and anticipating the future, I find the journey
+						worthwhile. Identifying my niche is crucial. As a
+						creative leader, I see project management as a worthy
+						pursuit alongside IT roles with creativity.</p>
+				</div>
             </div>
         </div>
     </div>
 
 	<div class="container" id="goals">
         <h2>My Goals</h2>
-        <div class="goals-row">
-            <li>Stability in Life</li>
-            <li>The "Impossible" Dream</li>
-        </div>
-
-		<div class="goals-row">
-            <img src="assets/images/goal 1.png" alt="Stable Life"/>
-			<img src="assets/images/goal 2.png" alt="Aurora Borealis"/>
-        </div>
-
-        <div class="goals-row">
-			<p>My aspiration is to craft a fulfilling life, seamlessly
-				intertwining my passions for music and arts, indulging in
-				what I truly love. A journey where success harmonizes with
-				the pursuit of heartfelt creativity.</p>
-            <p>I dream of witnessing the elusive beauty of the Aurora
-				Borealis — a challenging yet possible aspiration.
-				In my life, I long to marvel at this celestial spectacle
-				in person, embracing the ethereal dance of lights in the
-				northern skies.</p>
+        <div class="goals-row" id="carousel-goals">
+			<div class="goals-item">
+				<li>Stability in Life</li>
+				<div class="item">
+					<img src="assets/images/goal 1.png" alt="Stable Life"/>
+					<p>My aspiration is to craft a fulfilling life, seamlessly
+						intertwining my passions for music and arts, indulging
+						in what I truly love. A journey where success harmonizes
+						with the pursuit of heartfelt creativity.</p>
+				</div>
+			</div>
+			<div class="goals-item">
+				<li>The "Impossible" Dream</li>
+				<div class="item">
+					<img src="assets/images/goal 2.png" alt="Aurora Borealis"/>
+					<p>I dream of witnessing the elusive beauty of the Aurora
+						Borealis — a challenging yet possible aspiration.
+						In my life, I long to marvel at this celestial spectacle
+						in person, embracing the ethereal dance of lights in the
+						northern skies.</p>
+				</div>
+			</div>
         </div>
     </div>
 

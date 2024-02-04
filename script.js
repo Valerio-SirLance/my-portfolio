@@ -44,6 +44,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     updateCommentList();
+
+    $("#carousel").slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000, // Set the speed of the carousel
+        dots: true, // Display navigation dots
+    });
 });
 
 document.getElementById("bgm").addEventListener("click", () => {
@@ -67,3 +76,48 @@ function toggleNav() {
 
     navContainer.style.left = '0';
 }
+
+$(document).ready(function(){
+    $("#carousel-likes").slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+    });
+
+    $("#carousel-works").slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+    });
+
+    $("#carousel-pics").slick({
+        infinite: true,
+        slidesToShow: 2, 
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: true,
+        centerMode: true,  
+        centerPadding: '0%', 
+    });
+
+    $("#carousel-future").slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+    });
+
+    $("#carousel-goals").slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+    });
+});
