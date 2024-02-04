@@ -50,8 +50,8 @@ document.addEventListener("DOMContentLoaded", () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000, // Set the speed of the carousel
-        dots: true, // Display navigation dots
+        autoplaySpeed: 2000, 
+        dots: true, 
     });
 });
 
@@ -64,18 +64,53 @@ function toggleNav() {
     const navContainer = document.getElementById('navigation_container');
     const cloverLogo = document.getElementById('clover_logo');
 
-    navContainer.classList.toggle('open');
-
-    cloverLogo.style.left = navContainer.classList.contains('open') ?
-        '190px' : '20px';
-
-    if (!navContainer.classList.contains('open')) {
-        navContainer.style.left = '-250px';
-        return;
+    if (navContainer.classList.contains('open')) {
+        closeNav();
+    } else {
+        openNav();
     }
-
-    navContainer.style.left = '0';
 }
+
+function openNav() {
+    const navContainer = document.getElementById('navigation_container');
+    const cloverLogo = document.getElementById('clover_logo');
+
+    navContainer.classList.add('open');
+    navContainer.style.left = '0';
+    document.addEventListener('mousedown', closeNavOnClickOutside);
+    cloverLogo.addEventListener('mousedown', closeNavOnClickLogo);
+    cloverLogo.style.left = '230px';
+}
+
+function closeNav() {
+    const navContainer = document.getElementById('navigation_container');
+    const cloverLogo = document.getElementById('clover_logo');
+
+    navContainer.classList.remove('open');
+    navContainer.style.left = '-300px';
+    document.removeEventListener('mousedown', closeNavOnClickOutside);
+    cloverLogo.style.left = '40px';
+}
+
+function closeNavOnClickOutside(event) {
+    const navContainer = document.getElementById('navigation_container');
+    const target = event.target;
+
+    if (!navContainer.contains(target)) {
+        closeNav();
+    }
+}
+
+function closeNavOnClickLogo(event) {
+    const navContainer = document.getElementById('navigation_container');
+    const cloverLogo = document.getElementById('clover_logo');
+
+    if (event.target === cloverLogo) {
+        closeNav();
+    }
+}
+
+
 
 $(document).ready(function(){
     $("#carousel-likes").slick({
@@ -123,22 +158,13 @@ $(document).ready(function(){
 });
 
 function playMusic() {
-    // Add your code to trigger the musical surprise (e.g., play the audio)
     document.getElementById('background_music').play();
-
-    // You can also add additional animations or effects for a more playful experience
     document.getElementById('hover-trigger').classList.add('animated');
 }
 
 function animateText() {
     const bgmInstruction = document.getElementById('bgm-instruction');
-
-    // Remove the animated class
     bgmInstruction.classList.remove('animated');
-
-    // Trigger reflow to restart the animation
     void bgmInstruction.offsetWidth;
-
-    // Add the animated class
     bgmInstruction.classList.add('animated');
 }
