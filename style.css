@@ -332,6 +332,7 @@ p, li, label, .comment-content, .comment-replies {
     width: 250px;
     background-color: #009a5e;
     overflow-y: auto;
+    overflow-x: hidden;
     z-index: 1000;
     border-right: #ffc567;
     border-right-style: double;
@@ -411,4 +412,16 @@ p, li, label, .comment-content, .comment-replies {
 
 #navigation_container a:hover {
     background-color: rgba(255, 255, 255, 0.2);
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #027146; 
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ffc567; 
 }
