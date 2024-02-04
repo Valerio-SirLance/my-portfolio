@@ -68,21 +68,17 @@ h3 {
     text-align: center;
 }
 
-#likes li, #works li, #future li, #goals li, #testimonials li, #comments li {
+#likes li, #works li, #future li, #goals li, #comments li {
     font-weight: bold;
     color: darkgreen;
     list-style-type: none;
-}
-
-#testimonials h3 {
-    text-align: center;
 }
 
 h1:hover, h2:hover {
     transform: scale(1.03);
 }
 
-li:hover, #likes p:hover, #works p:hover, #testimonials p:hover,
+li:hover, #likes p:hover, #works p:hover,
 #future p:hover, #goals p:hover, img:hover, button:hover,
 .comment-container:hover, #display_latest:hover {
   transform: scale(1.06);
@@ -157,7 +153,7 @@ p, li, label, .comment-content, .comment-replies {
 }
 
 #likes li, #likes p, #likes img, #works li, #works p, #works img,
-#testimonials li, #testimonials p, #future li, #future img, #future p, 
+#future li, #future img, #future p, 
 #goals li, #goals img, #goals p {
     display: flex;
     flex-direction: column;
@@ -165,8 +161,8 @@ p, li, label, .comment-content, .comment-replies {
     text-align: center;
 }
 
-#likes li, #likes p, #likes img, #testimonials li, #goals li,  #works li, 
-#works p, #works img, #testimonials p, #future li, #future img, #future p,
+#likes li, #likes p, #likes img, #goals li,  #works li, 
+#works p, #works img, #future li, #future img, #future p,
 #goals img, #goals p {
     margin: 10px;
     background: linear-gradient(to bottom, white, #ddd); 
@@ -192,12 +188,6 @@ p, li, label, .comment-content, .comment-replies {
 }
 
 #works li {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-#testimonials .testimonials-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
