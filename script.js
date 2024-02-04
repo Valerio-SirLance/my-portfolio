@@ -121,3 +121,24 @@ $(document).ready(function(){
         autoplaySpeed: 2000,
     });
 });
+
+function playMusic() {
+    // Add your code to trigger the musical surprise (e.g., play the audio)
+    document.getElementById('background_music').play();
+
+    // You can also add additional animations or effects for a more playful experience
+    document.getElementById('hover-trigger').classList.add('animated');
+}
+
+function animateText() {
+    const bgmInstruction = document.getElementById('bgm-instruction');
+
+    // Remove the animated class
+    bgmInstruction.classList.remove('animated');
+
+    // Trigger reflow to restart the animation
+    void bgmInstruction.offsetWidth;
+
+    // Add the animated class
+    bgmInstruction.classList.add('animated');
+}
