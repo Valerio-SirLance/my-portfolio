@@ -211,7 +211,7 @@ p, li, label, .comment-content, .comment-replies {
     margin: 10px;
 }
 
-.commenter-name, .reply-name {
+.commenter-name, .reply-name, #comment_list h4 {
     font-weight: bold;
     color: darkgreen;
     text-align: left;
@@ -667,6 +667,10 @@ p, li, label, .comment-content, .comment-replies {
     }
 }
 
+#comment_list h4 {
+    margin-top: 0;
+}
+
 /* ... (existing CSS rules) ... */
 
 /* Mobile Responsive Styles */
@@ -686,10 +690,14 @@ p, li, label, .comment-content, .comment-replies {
 
     h1 {
         font-size: 1.3em;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
 
     h2 {
         font-size: 1.1em;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
 
     #header h3 {
@@ -703,13 +711,17 @@ p, li, label, .comment-content, .comment-replies {
         padding: 5px !important;
     }
 
-    p, li, label{
+    p, label{
         font-size: 0.8em;
     }
 
-    .commenter-name, .comment-replies,
+    li {
+        font-size: 0.7em;
+    }
+
+    .commenter-name, .comment-replies, #comment_list h4, #commentP_list p,
     .reply-name, .comment-content, .comment-replies, #user_name, #user_comment {
-        font-size: 0.8em;
+        font-size: 1em !important;
     }
 
     label,  #comments h3 {
@@ -732,10 +744,6 @@ p, li, label, .comment-content, .comment-replies {
         align-items: center;
     }
     
-    #carousel-pics {
-        width: 100%;
-    }
-
     #carousel-pics .slick-track {
         display: flex;
         flex-wrap: nowrap;
@@ -748,7 +756,19 @@ p, li, label, .comment-content, .comment-replies {
     }
 
     .slick-prev, .slick-next {
-        display: none !important;
+        top: 37.5% !important;
+    }
+
+    #carousel-pics .slick-prev,#carousel-pics .slick-next {
+        top: 50% !important;
+    }
+
+    .slick-prev {
+        left: -5% !important;
+    }
+
+    .slick-next {
+        right: -5% !important;
     }
 
     #comment_button {
@@ -760,9 +780,26 @@ p, li, label, .comment-content, .comment-replies {
         width: 80%;
     }
 
-    .item img {
-        width: 100%;
-        height: auto;
+    .item {
+        flex-direction: column;
+        gap: 10px;
+    }    
+
+    #likes li, #works li, #future li, #goals li {
+        width: 170px;
+    } 
+
+    #likes p, #works p, #future p, #goals p {
+        padding:20px;
+        min-width: 180px;
+        max-width: 180px;
+        font-size: 0.8em;
+        line-height: normal;
+    }
+
+    .item img{
+        width: 200px !important;
+        height: 200px !important;
     }
 
 }

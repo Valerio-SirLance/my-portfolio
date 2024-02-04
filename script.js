@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         for (const comment of commentsArray) {
             const listComment = document.createElement('li');
             listComment.classList.add('comment-container');
-            listComment.innerHTML = `${comment.userName}
+            listComment.innerHTML = `<h4>${comment.userName}</h4>
                 <p>${comment.userComment}</p>`;
             commentList.appendChild(listComment);
         }
@@ -131,13 +131,14 @@ $(document).ready(function(){
 
     $("#carousel-pics").slick({
         infinite: true,
-        slidesToShow: 2, 
+        slidesToShow: 1, 
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
         dots: true,
         centerMode: true,  
-        centerPadding: '0%', 
+        variableWidth: true, 
+        centerPadding: '10%',
     });
 
     $("#carousel-future").slick({
