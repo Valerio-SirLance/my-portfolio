@@ -538,18 +538,16 @@ p, li, label, .comment-content, .comment-replies {
 }
 
 #likes p, #works p, #future p, #goals p {
-    width: 400px;
-    height: 400px;
+    padding:50px;
     text-align: center;
     align-self: center;
+    min-width: 400px;
+    max-width: 400px;
     font-size: 1.5em;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 0 20px; 
-    padding-left: 20px;
-    padding-right: 20px;
     line-height: 30px;
 }
 
