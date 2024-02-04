@@ -1,0 +1,414 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'VintageParty';
+    src: url('assets/fonts/VintageParty-FreeVersion.ttf');
+}
+
+body {
+    background-image: url('./assets/images/BG.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    margin: 10px;
+    padding: 10;
+    font-family: 'VintageParty', 'Tahoma', sans-serif;
+    color: black;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.7); 
+    border-radius: 15px;
+    margin: 20px;
+    padding: 20px;
+    color: black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2 {
+    color: #ffc567;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); 
+    -webkit-text-stroke: 0.1px black; 
+    letter-spacing: 2.5px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    background: #009a5e;
+    border: #ffc567;
+    border-width: 0.3cap;
+    border-style:double;
+}
+
+h2 {
+    font-size: 2.3em;
+    background: #009a5e;
+    border: #ffc567;
+    border-width: 0.15cap;
+    border-style:dotted;
+}
+
+h3, #likes li, #works li, #future li, #goals li {
+    font-family: 'Tahoma', sans-serif;
+    font-weight: bold;
+}
+
+#header h3 {
+    color:darkgreen;
+    -webkit-text-stroke: 0.3px black; 
+}
+
+h3 {
+    text-align: center;
+}
+
+#likes li, #works li, #future li, #goals li, #testimonials li, #comments li {
+    font-weight: bold;
+    color: darkgreen;
+    list-style-type: none;
+}
+
+#testimonials h3 {
+    text-align: center;
+}
+
+h1:hover, h2:hover {
+    transform: scale(1.03);
+}
+
+li:hover, #likes p:hover, #works p:hover, #testimonials p:hover,
+#future p:hover, #goals p:hover, img:hover, button:hover,
+.comment-container:hover, #display_latest:hover {
+  transform: scale(1.06);
+}
+
+#pics {
+    text-align: center;
+}
+
+#pics img {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#comments {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7); 
+    border-radius: 15px;
+    margin: 20px;
+    padding: 20px;
+    color: black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+#input_comments {
+    margin-top: 15px;
+}
+
+#comment_button {
+    background-color: #009a5e;
+    color: #ffc567;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; 
+    font-weight: bold;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); 
+    -webkit-text-stroke: 0.3px black; 
+}
+
+#comment_button:hover {
+	background-color: darkslategrey;
+}
+
+#comment_list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+p, li, label, .comment-content, .comment-replies {
+    font-family: 'Tahoma', sans-serif;
+}
+
+#likes li, #likes p, #likes img, #works li, #works p, #works img,
+#testimonials li, #testimonials p, #future li, #future img, #future p, 
+#goals li, #goals img, #goals p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#likes li, #likes p, #likes img, #testimonials li, #goals li,  #works li, 
+#works p, #works img, #testimonials p, #future li, #future img, #future p,
+#goals img, #goals p {
+    margin: 10px;
+    background: linear-gradient(to bottom, white, #ddd); 
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    width: 250px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#likes .interests-row, #works .works-row, #future .future-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#works .works-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#works li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#testimonials .testimonials-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#goals .goals-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#comments li {
+    margin-bottom: 20px;
+}
+
+.comment-container {
+    background: linear-gradient(to bottom, white, #ddd);
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 40%;
+    margin: 10px;
+}
+
+.commenter-name, .reply-name {
+    font-weight: bold;
+    color: darkgreen;
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 1.15em;
+}
+
+
+.comment-content, #comment_list p {
+    text-align: left;
+    margin-bottom: 10px;
+    color: black;
+    font-weight: normal;
+}
+
+.comment-replies {
+    text-align: left;
+    color: black;
+    font-weight: normal;
+}
+
+#input_comments {
+    margin-top: 30px;
+}
+
+.reply-name::before {
+    content: '\2192';
+    margin-right: 5px;
+}
+
+#comments ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.comment-container, .comment-content, .comment-replies {
+    text-align: left;
+}
+
+#comments .commenter-name, #comments .reply-name {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+#user_comment_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px auto;
+}
+
+#comment_list li {
+    font-size: 1.15em;
+}
+
+#user_name, #user_comment {
+    width: 70%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#display_latest {
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: #009a5e;
+    color: #ffc567;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); 
+    -webkit-text-stroke: 0.3px black; 
+}
+
+#likes .interests-row .interest-item img, #works .works-row .work-item img, 
+#future .future-row .future-item img, #goals .goals-row img {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#clover_logo {
+    position: fixed;
+    bottom: 10px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+#clover_logo_img {
+    width: 50px;
+    height: 50px; 
+    transition: width 0.3s ease-in-out;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#navigation_container.open #clover_logo_img {
+    width: 50px;
+    height: 50px;
+}
+
+#navigation_container {
+    /* Remove the transition property from here */
+    left: -250px;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #009a5e;
+    overflow-y: auto;
+    z-index: 1000;
+    border-right: #ffc567;
+    border-right-style: double;
+    border-right-width: 10px;
+    transition: left 0.3s ease-in-out; /* Keep only background-color transition */
+}
+
+#social_media {
+    padding: 5px;
+    text-align: center;
+}
+
+#navigation_container #section {
+    margin-left: 15px;
+    text-align: center;
+}
+
+#social_media a, #navigation_container a {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    text-decoration: none;
+    font-family: 'Tahoma', sans-serif;
+    font-weight: bold;
+    color: white;
+    -webkit-text-stroke: 0.3px black; 
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+
+#social_media a {
+    font-size: smaller;
+    margin-left: 10px;
+}
+
+#navigation_container h3 {
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: darkgreen;
+    -webkit-text-stroke: 0.3px black; 
+    background: #ffc567;
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-color: #009a5e;
+}
+
+#navigation_container #name {
+    margin-top: 20px;
+    font-family: 'VintageParty';
+    color: #ffc567;
+    font-size: x-large;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); 
+    -webkit-text-stroke: 0.1px black; 
+    letter-spacing: 2.5px;
+    text-align: center;
+    border-top-style: double;
+    border-bottom-style: double;
+    padding: 3px;
+    border-color: #ffc567;
+    border-width: 5px;
+    margin-bottom: 5px;
+}
+
+#navigation_container #name {
+    display: block;
+    text-align: center; 
+    width: 100%; 
+}
+
+#social_media img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+#navigation_container a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
