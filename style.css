@@ -719,9 +719,13 @@ p, li, label, .comment-content, .comment-replies {
         font-size: 0.7em;
     }
 
-    .commenter-name, .comment-replies, #comment_list h4, #commentP_list p,
+    .commenter-name, .comment-replies,
     .reply-name, .comment-content, .comment-replies, #user_name, #user_comment {
         font-size: 1em !important;
+    }
+
+    #comment_list h4, #comment_list p {
+        font-size: 0.8em !important;
     }
 
     label,  #comments h3 {
@@ -802,4 +806,25 @@ p, li, label, .comment-content, .comment-replies {
         height: 200px !important;
     }
 
+    #navigation_container {
+        width: 60%;
+    }
+
+    #navigation_container #name {
+        margin-top: 20px;
+        font-size: 1em;
+        display: block;
+        text-align: center; 
+        width: 100%;
+    }
+
+    #social_media a, #navigation_container a {
+        font-size: 0.8em;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+    #navigation_container h3 {
+        font-size: 0.9em;
+    }
 }
