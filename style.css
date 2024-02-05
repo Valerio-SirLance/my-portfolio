@@ -671,8 +671,6 @@ p, li, label, .comment-content, .comment-replies {
     margin-top: 0;
 }
 
-/* ... (existing CSS rules) ... */
-
 /* Mobile Responsive Styles */
 @media only screen and (max-width: 600px) {
     body {
@@ -826,5 +824,161 @@ p, li, label, .comment-content, .comment-replies {
 
     #navigation_container h3 {
         font-size: 0.9em;
+    }
+}
+
+/* Tablet Responsive Styles */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .container {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 2em;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    #header h3 {
+        font-size: 1em !important;
+        margin-bottom: 0;
+        padding-bottom: 5px;
+    }
+
+    h3, #likes li, #works li, #future li, #goals li {
+        font-size: 1.1em;
+        padding: 8px !important;
+    }
+
+    p, label {
+        font-size: 1em;
+    }
+
+    li {
+        font-size: 0.9em;
+    }
+
+    .commenter-name, .comment-replies,
+    .reply-name, .comment-content, .comment-replies, #user_name, #user_comment {
+        font-size: 1.2em !important;
+    }
+
+    #comment_list h4, #comment_list p {
+        font-size: 1em !important;
+    }
+
+    label, #comments h3 {
+        font-size: 1em;
+    }
+
+    #header h3 {
+        font-size: 1.2em;
+    }
+
+    #pics {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    #pics img {
+        width: 300px !important;
+        height: 300px !important;
+        display: inline-block;
+        align-items: center;
+    }
+
+    #carousel-pics .slick-track {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    #carousel-pics img {
+        border-radius: 15px;
+        margin: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .slick-prev, .slick-next {
+        top: 37.5% !important;
+    }
+
+    #carousel-pics .slick-prev, #carousel-pics .slick-next {
+        top: 50% !important;
+    }
+
+    .slick-prev {
+        left: -5% !important;
+    }
+
+    .slick-next {
+        right: -5% !important;
+    }
+
+    #comment_button {
+        margin-top: 10px;
+        font-size: 1em;
+    }
+
+    .comment-container {
+        width: 80%;
+    }
+
+    .item {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    #likes li, #works li, #future li, #goals li {
+        width: 230px;
+    }
+
+    #likes p, #works p, #future p, #goals p {
+        padding: 20px;
+        min-width: 200px;
+        max-width: 200px;
+        font-size: 1em;
+        line-height: normal;
+    }
+
+    .item img{
+        width: 250px !important;
+        height: 300px !important;
+    }
+
+    #navigation_container {
+        width: 30%;
+    }
+
+    #navigation_container #name {
+        margin-top: 20px;
+        font-size: 1em;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    #social_media a, #navigation_container a {
+        font-size: 1em;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+    #navigation_container h3 {
+        font-size: 1em;
     }
 }
