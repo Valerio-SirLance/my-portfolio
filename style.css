@@ -914,7 +914,7 @@ p, li, label, .comment-content, .comment-replies {
     }
 
     .slick-prev, .slick-next {
-        top: 37.5% !important;
+        top: 60% !important;
     }
 
     #carousel-pics .slick-prev, #carousel-pics .slick-next {
