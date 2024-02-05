@@ -5,16 +5,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" 
+		href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" 
+		href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script type="module" 
+        src="https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js">
+    </script>
+    <script type="module"
+        src="https://www.gstatic.com/firebasejs/9.5.0/firebase-database.js">
+    </script>
+    <script type="module" src="script.js"></script>
 	<link rel="icon" href="./assets/images/icon.png" />
     <title>Lance & Clovers</title>
 </head>
 
 <body>
-	<div id="clover_logo" onclick="toggleNav()">
+	<div id="clover_logo" onclick="import('./script.js').
+	then(module => module.toggleNav())">
 		<img id="clover_logo_img" src="assets/images/nav icon.png"
 			alt="Clover Logo" style="width: 50px;">
 	</div>
@@ -59,7 +69,8 @@
 	
     <div class="container" id="header">
         <h1 id="bgm">🍀 Sir Lance Valerio 🍀</h1>
-		<div id="bgm-instruction" onmouseover="animateText()">
+		<div id="bgm-instruction" onmouseover="import('./script.js').
+		then(module => module.animateText())">
 			<h3>Click my name for a whimsical musical surprise! 🎶</h3>
 		</div>
     </div>
@@ -383,8 +394,6 @@
 		<ul id="comment_list"></ul>
 
     </div>
-
-    <script src="script.js"></script>
 </body>
 
 </html>

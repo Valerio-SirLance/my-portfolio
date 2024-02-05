@@ -152,7 +152,7 @@ p, li, label, .comment-content, .comment-replies {
     font-family: 'Tahoma', sans-serif;
 }
 
-#comments h3, label, .comment-replies, #comment_button {
+#comments h3, label, .comment-replies p, #comment_button {
     font-size: 1.3em;
 }
 
@@ -211,16 +211,20 @@ p, li, label, .comment-content, .comment-replies {
     margin: 10px;
 }
 
-.commenter-name, .reply-name, #comment_list h4 {
+.commenter-name, .reply-name, #comments h4 {
     font-weight: bold;
     color: darkgreen;
     text-align: left;
-    margin-bottom: 10px;
+    font-size: 1.3em;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.commenter-name, .reply-name, #comment_list h4 {
     font-size: 1.5em;
 }
 
-
-.comment-content, #comment_list p {
+#comments p {
     text-align: left;
     margin-bottom: 10px;
     color: black;
@@ -232,7 +236,7 @@ p, li, label, .comment-content, .comment-replies {
     text-align: left;
     color: black;
     font-weight: normal;
-    font-size: 1.3em;
+    font-size: 1.3em !important;
 }
 
 #input_comments {
@@ -242,6 +246,15 @@ p, li, label, .comment-content, .comment-replies {
 .reply-name::before {
     content: '\2192';
     margin-right: 5px;
+}
+
+#comment_list h4 {
+    font-size: 1.5em !important;
+}
+
+#comment_list p {
+    font-size: 1.3em !important;
+    padding-left: 5px;
 }
 
 #comments ul {
@@ -258,7 +271,6 @@ p, li, label, .comment-content, .comment-replies {
 
 #comments .commenter-name, #comments .reply-name {
     text-align: left;
-    margin-bottom: 5px;
 }
 
 #user_comment_container {
@@ -671,6 +683,38 @@ p, li, label, .comment-content, .comment-replies {
     margin-top: 0;
 }
 
+.comment-container {
+    position: relative;
+}
+
+.comment-content {
+    padding: 10px;
+}
+
+.comment-actions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.edit-comment,
+.delete-comment {
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+.edit-comment:hover,
+.delete-comment:hover {
+    color: #ffc567;
+}
+
+#comments .comment-container .comment-replies p {
+    padding-left: 10px !important;
+    font-size: 1em !important;
+}
+
+
 /* Mobile Responsive Styles */
 @media only screen and (max-width: 600px) {
     body {
@@ -717,9 +761,13 @@ p, li, label, .comment-content, .comment-replies {
         font-size: 0.7em;
     }
 
-    .commenter-name, .comment-replies,
+    .commenter-name, .comment-content p, .comment-replies p,
     .reply-name, .comment-content, .comment-replies, #user_name, #user_comment {
         font-size: 1em !important;
+    }
+
+    .commenter-name, .comment-content p, .reply-name, .comment-replies p {
+        margin: 0;
     }
 
     #comment_list h4, #comment_list p {
@@ -732,6 +780,10 @@ p, li, label, .comment-content, .comment-replies {
 
     #header h3 {
         font-size: 1em;
+    }
+
+    .commenter-name, .reply-name {
+        font-size: 1.1em !important;
     }
 
     #pics {
@@ -825,6 +877,25 @@ p, li, label, .comment-content, .comment-replies {
     #navigation_container h3 {
         font-size: 0.9em;
     }
+
+    .edit-comment,
+    .delete-comment {
+    font-size: 20px;
+    }
+
+    #comments #comment_list h4 {
+        font-size: 0.9em !important;
+        padding-left: 0;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    
+    #comments #comment_list p {
+        font-size: 0.8em !important;
+        padding-left: 0;
+        margin: 0;
+    }
+    
 }
 
 /* Tablet Responsive Styles */
@@ -873,21 +944,30 @@ p, li, label, .comment-content, .comment-replies {
         font-size: 0.9em;
     }
 
-    .commenter-name, .comment-replies,
+    .commenter-name, .comment-content p, .comment-replies p,
     .reply-name, .comment-content, .comment-replies, #user_name, #user_comment {
-        font-size: 1.2em !important;
-    }
-
-    #comment_list h4, #comment_list p {
         font-size: 1em !important;
     }
 
-    label, #comments h3 {
+    label {
         font-size: 1em;
     }
 
-    #header h3 {
-        font-size: 1.2em;
+    #header h3, .commenter-name, .reply-name {
+        font-size: 1.2em !important;
+    }
+
+    #comments #comment_list h4 {
+        font-size: 1.2em !important;
+        padding-left: 0;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    
+    #comments #comment_list p {
+        font-size: 1em !important;
+        padding-left: 0;
+        margin: 0;
     }
 
     #pics {
