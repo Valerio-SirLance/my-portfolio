@@ -680,7 +680,8 @@ p, li, label, .comment-content, .comment-replies {
 }
 
 #comment_list h4 {
-    margin-top: 0;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 .comment-container {
