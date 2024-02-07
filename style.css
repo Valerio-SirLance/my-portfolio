@@ -719,7 +719,7 @@ p, li, label, .comment-content, .comment-replies {
 /* Mobile Responsive Styles */
 @media only screen and (max-width: 600px) {
     body {
-        background-image: url('./assets/images/BG.png');
+        background-image: url('./assets/images/mobile bg.png');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: 100% 100vh;
