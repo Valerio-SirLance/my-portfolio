@@ -722,8 +722,8 @@ p, li, label, .comment-content, .comment-replies {
         background-image: url('./assets/images/mobile bg.png');
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-size: 100% 100vh;
-        background-position: center; 
+        background-size: 100% 100%;
+        background-position: center center; 
         margin: 0; 
         padding: 0; 
         display: flex;
