@@ -272,6 +272,11 @@ button:hover {
         flex-direction: row;
         justify-content: space-around;
     }
+
+    td button {
+        text-align: center;
+        margin: 5px auto;
+    }
 }
 
 @media only screen and (max-width: 600px) {
