@@ -387,5 +387,7 @@ button:hover {
         border-radius: 10px;
     }
 
-    
+    td button {
+        font-size: 1.5em !important;
+    }
 }
