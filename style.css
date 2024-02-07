@@ -723,6 +723,7 @@ p, li, label, .comment-content, .comment-replies {
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
+        background-attachment: fixed;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
