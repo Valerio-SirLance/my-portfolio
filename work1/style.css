@@ -216,10 +216,12 @@ ul:hover, img:hover, button:hover {
 
     h1 {
         font-size: 1.2em;
+        padding: 5px;
     }
 
     h2, label {
         font-size: 1em;
+        padding: 5px;
     }
 
     li, h3, #region_country p {
