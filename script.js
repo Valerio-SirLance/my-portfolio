@@ -32,12 +32,12 @@ document.addEventListener("DOMContentLoaded", () => {
             const commentsArray = Object.values(commentsData || []);
 
             commentsArray.sort((a, b) =>
-                displayLatest ? b.timestamp - a.timestamp : a.timestamp - b.timestamp
+                displayLatest ? b.timestamp - a.timestamp :
+                 a.timestamp - b.timestamp
             );
 
             commentList.innerHTML = '';
 
-            // Inside the loop where comments are created
             for (const comment of commentsArray) {
                 const listComment = document.createElement('li');
                 listComment.classList.add('comment-container');
@@ -46,23 +46,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 commentContent.classList.add('comment-content');
                 commentContent.innerHTML = `<h4>${comment.userName}</h4>
                     <p>${comment.userComment}</p>`;
-                
-                const commentActions = document.createElement('div');
-                commentActions.classList.add('comment-actions');
-                commentActions.innerHTML = `<span class="edit-comment" onclick="import('./script.js').
-                then(module => module.editComment('${comment.timestamp}'))">&#9998;</span>
-                    <span class="delete-comment" onclick="import('./script.js').
-                    then(module => module.deleteComment('${comment.timestamp}'))">&#128465;</span>`;
-                
                 listComment.appendChild(commentContent);
-                listComment.appendChild(commentActions);
                 commentList.appendChild(listComment);
             }
 
         });
     }
 
-    // Push comment to Firebase
     commentButton.addEventListener('click', () => {
         const userName = userNameInput.value.trim();
         const userComment = userCommentInput.value.trim();
@@ -147,24 +137,6 @@ $(document).ready(function(){
         autoplaySpeed: 2000,
     });
 });
-
-export function editComment(timestamp) {
-    const updatedComment = prompt('Edit your comment:');
-    if (updatedComment !== null) {
-        const commentRef = ref(database, `comments/${timestamp}`);
-        update(commentRef, {
-            userComment: updatedComment
-        });
-    }
-}
-
-export function deleteComment(timestamp) {
-    const confirmDelete = confirm('Are you sure you want to delete this comment?');
-    if (confirmDelete) {
-        const commentRef = ref(database, `comments/${timestamp}`);
-        remove(commentRef);
-    }
-}
 
 export function openNav() {
     const navContainer = document.getElementById('navigation_container');

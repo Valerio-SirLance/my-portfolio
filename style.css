@@ -715,24 +715,13 @@ p, li, label, .comment-content, .comment-replies {
     font-size: 1em !important;
 }
 
-/* iPhone Responsive Style*/
-@media only screen and (max-device-width: 812px) and (orientation: portrait) {
-    body {
-        background-image: url('./assets/images/mobile bg.png');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: 100% auto;
-        background-position: center center;
-    }
-}
-
 /* Mobile Responsive Styles */
 @media only screen and (max-width: 600px) {
     body {
         background-image: url('./assets/images/mobile bg.png');
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-size: auto 100%;
+        background-size: 100% 100vh;
         background-position: center center; 
         margin: 0; 
         padding: 0; 
