@@ -187,6 +187,11 @@ ul:hover, img:hover, button:hover {
     transform: scale(1.06);
 }
 
+#country_details:empty,
+#region_countries:empty {
+    display: none;
+}
+
 ::-webkit-scrollbar {
     width: 12px;
 }
