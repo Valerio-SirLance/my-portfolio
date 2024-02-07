@@ -226,8 +226,13 @@ button:hover {
         padding: 10px;
     }
 
-    li, h3, p, th, tbody, button {
+    li, h3, p, th, tbody, label, input, select, button  {
         font-size: 0.9em;
+    }
+
+    label, input, select, button {
+        margin:0;
+        padding: 8px; 
     }
 
     #list_container {
@@ -248,6 +253,24 @@ button:hover {
 
     td {
         font-size: 1em;
+    }
+
+    input, select {
+        width: 100% !important;
+     }
+ 
+     button {
+         margin-top: 10px;
+     }
+
+    .popup {
+        padding: 10px;
+    }
+
+    #popup_buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
 }
 
@@ -272,7 +295,7 @@ button:hover {
         padding: 5px;
     }
 
-    li, h3, p, th, tbody, button, label, input, select, button {
+    li, h3, p, th, tbody, button, label, input, select {
         font-size: 0.6em;
     }
 
