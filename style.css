@@ -726,7 +726,6 @@ p, li, label, .comment-content, .comment-replies {
         margin: 0; 
         padding: 0; 
         display: flex;
-        background-attachment: fixed;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
