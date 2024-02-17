@@ -1,7 +1,7 @@
 # [**🍀 _**Lance & Clovers**_ 🍀**](https://lance-and-clovers.netlify.app/)
 Hi! I am _**Sir Lance Valerio**_! Check out my website and know things about me!
 
-# **_Overview_ 🔍**
+## **_Overview_ 🔍**
 
 **_Lance & Clovers_** consists of several sections:
 
@@ -17,7 +17,7 @@ Hi! I am _**Sir Lance Valerio**_! Check out my website and know things about me!
 
 6. **Comments Section**: Provides a platform for users to leave comments and interact with the website owner.
 
-# **_Technologies Used_ 💻**
+## **_Technologies Used_ 💻**
 
 This website is made using:
 
